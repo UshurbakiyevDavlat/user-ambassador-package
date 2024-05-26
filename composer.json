@@ -1,6 +1,6 @@
 {
     "name": "davlatbekushurbakiyev/user-ambassador-package",
-    "description": "Package for user service functionlity of ambassador project",
+    "description": "Package for user service functionality of ambassador project",
     "type": "library",
     "require": {
         "php": "^8.0",
