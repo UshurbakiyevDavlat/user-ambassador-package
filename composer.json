@@ -1,0 +1,21 @@
+{
+    "name": "davlatbekushurbakiyev/user-ambassador-package",
+    "description": "Package for user service functionlity of ambassador project",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.12 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Services\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ушурбакиев Давлатбек Алимжанович",
+            "email": "dushurbakiev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
