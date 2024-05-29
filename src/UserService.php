@@ -102,6 +102,6 @@ class UserService extends ApiService
      */
     public function user(int $id): mixed
     {
-        return $this->get("user/$id");
+        return $this->get("users/$id");
     }
 }
