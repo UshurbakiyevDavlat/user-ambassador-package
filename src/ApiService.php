@@ -18,11 +18,15 @@ abstract class ApiService
     {
         $response = $this->setRequest($method, $path, $data);
 
-        if ($response->ok()) {
+        if ($response->ok() || $response->created()) {
             return $response->json();
         }
 
-        throw new \HttpException($response->status(), $response->body());
+        throw new \Exception(
+            'Request failed from user package.',
+            $response->status(),
+            $response->body()
+        );
     }
 
     public function setRequest(string $method, string $path, array $data = [])
